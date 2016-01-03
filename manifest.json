@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Google Music Search from YouTube",
+  "description": "Search for Music that you found on YouTube on Google Play Music",
+  "version": "0.1.0",
+
+  "icons": {
+     "128": "res/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch*"],
+      "run_at": "document_end",
+      "js": ["addSearchButton.js"]
+    }
+  ]
+}
