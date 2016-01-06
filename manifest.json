@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Google Music Search from YouTube",
   "description": "Search for Music that you found on YouTube on Google Play Music",
-  "version": "0.2.0",
+  "version": "0.2.1",
 
   "icons": {
      "128": "res/icon_128.png"
