@@ -1,6 +1,5 @@
 function addMusicSearchButton() {
   if (buttonNotNeeded()) {
-    console.log("button not needed!");
     return;
   }
 
@@ -28,12 +27,10 @@ function addMusicSearchButton() {
 
   // Add new button to website
   buttonDiv.appendChild(clonedButton);
-  console.log("added button");
 }
 
 function buttonNotNeeded() {
   var buttons = document.getElementsByClassName("yt-uix-button-gmusic-search");
-  console.log(buttons.length);
   return ((!('/watch' === location.pathname)) || buttons.length > 0);
 }
 
@@ -42,7 +39,6 @@ function buttonNotNeeded() {
  * (thin loading indicator at top) has shown.
  */
 (document.body || document.documentElement).addEventListener('transitionend', function(event) {
-  console.log("transition event");
   if (event.propertyName === 'width' && event.target.id === 'progress') {
     addMusicSearchButton();
   }
